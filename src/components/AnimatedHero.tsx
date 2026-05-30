@@ -25,13 +25,13 @@ export default function AnimatedHero() {
 
       {/* Floating Mascots */}
       <motion.div
-        className="absolute top-[20%] left-[15%] z-10 hidden md:block"
+        className="absolute top-[20%] left-[15%] z-10 hidden md:block mix-blend-screen"
         animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
         transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
       >
         <div className="relative w-32 h-32 md:w-48 md:h-48 drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]">
           <Image 
-            src="/mascot-blue.png" 
+            src="/mascot-blue-v2.png" 
             alt="AI Mascot Blue" 
             fill 
             className="object-contain"
@@ -41,13 +41,13 @@ export default function AnimatedHero() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-[25%] right-[15%] z-10 hidden md:block"
+        className="absolute bottom-[25%] right-[15%] z-10 hidden md:block mix-blend-screen"
         animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
         transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 1 }}
       >
         <div className="relative w-32 h-32 md:w-48 md:h-48 drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]">
           <Image 
-            src="/mascot-pink.png" 
+            src="/mascot-pink-v2.png" 
             alt="AI Mascot Pink" 
             fill 
             className="object-contain"
