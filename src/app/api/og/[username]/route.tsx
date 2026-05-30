@@ -5,10 +5,10 @@ export const runtime = 'edge'
 
 export async function GET(
   request: Request,
-  { params }: { params: { username: string } }
+  { params }: { params: Promise<{ username: string }> }
 ) {
   try {
-    const username = params.username
+    const { username } = await params
 
     const user = await prisma.user.findUnique({
       where: { username },
