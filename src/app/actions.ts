@@ -31,8 +31,8 @@ export async function generateAiBio() {
   if (!user) throw new Error("User not found")
 
   const prompt = `Write a professional, engaging developer bio for ${user.name || "a developer"} in the first person. 
-They have the following skills: ${user.skills.map(s => s.name).join(", ")}.
-They have built the following projects: ${user.projects.map(p => p.title).join(", ")}.
+They have the following skills: ${user.skills.map((s: { name: string }) => s.name).join(", ")}.
+They have built the following projects: ${user.projects.map((p: { title: string }) => p.title).join(", ")}.
 Keep it concise, around 3-4 sentences, highlighting their expertise and passion for building. Use a confident but humble tone. Do not use quotes around the bio.`
 
   const completion = await groq.chat.completions.create({
