@@ -53,7 +53,7 @@ export async function GET(
             {user.avatar ? (
               <img
                 src={user.avatar}
-                alt={user.name || user.username}
+                alt={user.name ?? user.username ?? ""}
                 style={{
                   width: '160px',
                   height: '160px',
@@ -77,7 +77,7 @@ export async function GET(
                   marginBottom: '32px',
                 }}
               >
-                {(user.name || user.username).charAt(0).toUpperCase()}
+                {(user.name ?? user.username ?? "").charAt(0).toUpperCase()}
               </div>
             )}
             
