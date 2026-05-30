@@ -181,7 +181,7 @@ function ProjectForm() {
             </div>
             <div className="space-y-2">
               <Label>Status</Label>
-              <Select value={formData.status} onValueChange={v => setFormData({...formData, status: v})}>
+              <Select value={formData.status} onValueChange={v => setFormData({...formData, status: v ?? "completed"})}>
                 <SelectTrigger className="bg-zinc-950 border-zinc-800">
                   <SelectValue />
                 </SelectTrigger>
@@ -227,7 +227,7 @@ function SkillForm() {
           </div>
           <div className="w-[200px] space-y-2">
             <Label>Level</Label>
-            <Select value={formData.level} onValueChange={v => setFormData({...formData, level: v})}>
+            <Select value={formData.level} onValueChange={v => setFormData({...formData, level: v ?? "Intermediate"})}>
               <SelectTrigger className="bg-zinc-950 border-zinc-800">
                 <SelectValue />
               </SelectTrigger>
