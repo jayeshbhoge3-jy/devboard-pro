@@ -65,7 +65,7 @@ export default async function PublicProfilePage({ params }: { params: Promise<{ 
     console.error("Redis error:", e)
   }
   
-  const githubStats = await getGithubStats(user.username)
+  const githubStats = await getGithubStats(user.username ?? "")
 
   return <ProfileView user={user} views={views} githubStats={githubStats} />
 }

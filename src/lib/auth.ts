@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
         // Fetch username to include in session
         const dbUser = await prisma.user.findUnique({ where: { id: user.id } })
         if (dbUser) {
-          session.user.username = dbUser.username;
+          session.user.username = dbUser.username ?? "";
         }
       }
       return session
