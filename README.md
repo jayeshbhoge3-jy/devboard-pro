@@ -80,12 +80,17 @@ DevBoard Pro is a **full-stack developer portfolio platform** where developers c
 ## 📸 Screenshots
 
 > Dashboard — Manage your projects, skills, and bio
+> <img width="1919" height="958" alt="Screenshot 2026-06-03 105156" src="https://github.com/user-attachments/assets/eef78e47-302b-4718-b4fe-f8df0276410f" />
+
 
 > Public Profile — `/u/your-username` — Beautiful shareable page
+> <img width="1919" height="971" alt="Screenshot 2026-06-03 105206" src="https://github.com/user-attachments/assets/b9ca8954-a014-43e0-91f0-15f7f1816624" />
+
 
 > AI Bio Generator — One click to generate a professional bio
 
----
+---<img width="1918" height="965" alt="Screenshot 2026-06-03 105220" src="https://github.com/user-attachments/assets/0b415849-2e1d-40d5-a9b3-6817caa06fc5" />
+
 
 ## 🚀 Getting Started
 
